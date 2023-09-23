@@ -1,0 +1,47 @@
+<!--      
+        SCS2208 Rapid Application Development 
+                    Assignment - I
+                M.R.M.Ashfak - 20000162
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROLE DICE Game</title>
+    <link href="game.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!--show two dice-->
+        <div class="two-dice">
+            <img src="./Dice_Images/dice_1.png"  id="die1">
+            <img src="./Dice_Images/dice_2.png"  id="die2">
+        </div>
+
+        <!--implement score of a role-->
+        <p id="score"></p>
+        <button onclick="roll()" id="rollBtn">ROLL THE DICE</button>
+        
+        <!--formatting player panel-->
+        <div class="main_panel">
+            
+            <!--player one-->
+            <div class="playerPanel_1">
+                <div class="player_name" id="name_0">Player 1</div>
+                <div class="player_score" id="score_0">0</div>
+            </div>
+
+            <!--player two-->
+            <div class="playerPanel_1">
+                <div class="player_name" id="name_1">Player 2</div>
+                <div class="player_score" id="score_1">0</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

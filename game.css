@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(
+        #8ebbcc,
+        #caf0fc
+    );
+    
+}
+
+.container{
+    width:500px;
+    padding: 50px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    box-shadow: 0 15px 35px rgba(50,50,50,0.5);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.two-dice{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+p{
+    font-size: 20px;
+    margin: 30px 0;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+button{
+    background-color: #e92e3d;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 15px 0;
+    width: 150px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.two-dice img{
+    width: 60%;
+    margin-left: 8%;
+    margin-right: 8%;
+
+}
+
+.shake{
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake{
+    0%{
+        transform: translate(.4em);
+    }
+    25%{
+        transform: translate(-.4em);
+    }
+    50%{
+        transform: translate(.4em);
+    }
+    75%{
+        transform: translate(-.4em);
+    }
+    100%{
+        transform: translate(.4em);
+    }
+}
+
+.main_panel{
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgb(158, 242, 242);
+    border-radius: 5px;
+    margin: 5%;
+
+
+}
+
+.playerPanel_1, .playerPanel_2{
+    width: 50%;
+    float: left;
+    height: 60%;
+    padding: 10px;
+    align-items: center;
+    
+}
+
+.player_name{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 5;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.player_score{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+    color: #e92e3d;
+    margin-bottom: 5px;
+}
+
+.active { 
+    background-color: #60d5e7; 
+    font-weight: 700;
+    border-radius: 5px;
+}
+
